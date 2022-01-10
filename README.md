@@ -2,14 +2,14 @@
 Regression analysis between weather and scores in PL matches
 
 The three data sets that will be used in this project are as follows:
-	The first data set is the Premier League (Football league, England) result data and the URL is 
+ The first data set is the Premier League (Football league, England) result data and the URL is 
 https://www.bbc.com/sport/football/premier-league/scores-fixtures/2020-10. By changing the key for the 
 date on the far right, the result data of the PL games up to November 2019 can be scrapped. (example of 
 URL : https://www.bbc.com/sport/football/premier-league/scores-fixtures/{year}-{month}) This is the 
 data provided by the BBC sport, which allows the date of the match, teams that played the match, and the 
 score of the match to be scrapped. 
 
-	The second data set is climate data, which includes the weather and temperature of the global 
+ The second data set is climate data, which includes the weather and temperature of the global 
 region over time, and the URL is https://www.metaweather.com/api./ This API delivers JSON over 
 HTTPS for access to climate data. By using /api/location/search/?lattlong=(latt),(long) URL, it is 
 possible to get a special code number in the area called (woeid) as a result by entering the latitude and 
@@ -17,14 +17,14 @@ longitude of a specific region. Then, by using /api/location/(woeid)/(date) URL,
 will provide data about maximum temperature, minimum temperature, weather status, wind speed, etc. 
 MetaWeather is an open API that provides reliable JSON responses according to the query.
 
-	The third data set is geospatial data, which includes the latitude and longitude of the global region, 
+ The third data set is geospatial data, which includes the latitude and longitude of the global region, 
 and the URL is https://maps.googleapis.com/maps/api/. This is the open API of Google Maps, and by 
 entering the human-readable address through geocoding, the latitude and longitude of that address can be 
 obtained. For example, by using /api/geocode/json?address=Old Trafford&Key=API_KEY URL, we can 
 obtain the latitude and longitude of Old Trafford, which is the home of Manchester United. This API 
 makes it easy to obtain geospatial data for the target region.
 
-	The first data set provides the home team (I will extract home stadium data via URL as below), 
+ The first data set provides the home team (I will extract home stadium data via URL as below), 
 date of the match, and scores, and it can be combined with the third data set to extract the latitude and 
 longitude of the match playing area. Furthermore, this result can be combined with the second dataset to 
 obtain climate data at the date of the match in home stadium latitude and longitude. To be specific, firstly, 
@@ -34,7 +34,7 @@ weather at the match time will be obtained by entering latitude, longitude, and 
 MetaWeather API.
 (Home stadiums of PL teams URL : https://en.wikipedia.org/wiki/List_of_Premier_League_stadiums)
 
-	I would like to investigate the correlation between the number of goals in the football match and 
+ I would like to investigate the correlation between the number of goals in the football match and 
 the weather in the end as I proceed with this project. Merging the three datasets will show the number of 
 goals scored in all matches from November 2019, and the weather at that time can be classified into three 
 categories: clear, cloudy, and rainy. Through the data on the number of scores in the classified three 
