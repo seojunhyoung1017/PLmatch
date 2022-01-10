@@ -110,7 +110,7 @@ def remote(grade = grade):
 
 #Stadium lat/ long (geocoding)
     url = 'https://maps.googleapis.com/maps/api/geocode/json'
-    key = 'AIzaSyA6KhikiPATtDaBX8aheBuEbYjIvftACd0'
+    key = 'APIKEY'
     for a in hometeam:
         adrs = a['stadium']
         get_params = {'address' : adrs, 'key' : key}
