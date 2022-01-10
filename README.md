@@ -42,7 +42,7 @@ groups, the paired samples t-test will be conducted to examine the correlation b
 scores and the weather. As a football fan, I always felt that I could not see many goals in the match when 
 it rained, and I am glad that I can look into whether this really matters.
 
-  How to run pl_match.py file?
+    How to run pl_match.py file?
 When operating this program through cmd, the source should be determined as local or remote.
 For example) python pl_match.py --source remote or --source local
 Activating the grade flag will save the program running time to operate various APIs, bringing in only one month of November 2020 of Premier League game data for the convenience of graders. :)
