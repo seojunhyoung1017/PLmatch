@@ -46,7 +46,7 @@ it rained, and I am glad that I can look into whether this really matters.
 When operating this program through cmd, the source should be determined as local or remote.
 For example) python pl_match.py --source remote or --source local
 Activating the grade flag will save the program running time to operate various APIs, bringing in only one month of November 2020 of Premier League game data for the convenience of graders. :)
-For example) python JUNHYOUNG_SEO_proj2.py --source remote --grade or --source local --grade
+For example) python pl_match.py --source remote --grade or --source local --grade
 This will store data marked as _grade.csv, and also in local source, it will call up data labeled _grade.csv and generate the final_data_grade.csv.
 If you do not invoke the grade flag, program will scrape all of match data in bbcsports.com, which is data for a year.
 And it takes a lot of time to accept data via weather API, in my experience, it took me about 20minutes. 
